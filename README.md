@@ -1,16 +1,49 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Weather App 🌦️
 
-Currently, two official plugins are available:
+A modern weather app built with **React**, **Redux Toolkit**, and **Vite**.  
+It fetches real-time weather data from **OpenWeather API** and displays temperature, humidity, and conditions with a clean UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- Search weather by city name
+- Real-time data from OpenWeather API
+- Temperature in °C, humidity, and weather description
+- Responsive design with Tailwind CSS
+- Error handling for invalid city names
 
-## React Compiler
+## ⚙️ Installation
+1. Clone the repository:
+   ```bash
+  https://github.com/batoulibrahem/WeatherReactRedux.git
+# Install dependencies:
+    npm install
+## 📸 Screenshots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Home Page
+<img width="994" height="596" alt="image" src="https://github.com/user-attachments/assets/51341173-b9bc-4908-a989-fd63cb51e9bb" />
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Search Result
+<img width="867" height="607" alt="image" src="https://github.com/user-attachments/assets/3609613e-469a-4f4d-8336-44a984109d3c" />
+
+🔑 Environment Variables
+create a .env file in the root directory and add your OpenWeather API key
+  VITE_APP_OPEN_WEATHER_KEY=your_api_key_here
+▶️ Run the App
+Start the development server:
+ npm run dev
+📂 Project Structure:
+src/
+ ┣ Redux/
+ ┃ ┣ store/
+ ┃ ┃ ┗ store.js
+ ┃ ┗ slices/
+ ┃   ┗ weatherSlice.js
+ ┣ App.jsx
+ ┣ main.jsx
+ ┣ index.css
+ 
+📝 License
+ This project is open-source and available under the MIT License.
+
