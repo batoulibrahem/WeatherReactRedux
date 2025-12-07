@@ -8,12 +8,11 @@ function App() {
   const [city, setCity] = useState("Chicago");
   const dispatch = useDispatch();
 
-  // جلب الطقس عند أول تحميل
   useEffect(() => {
     dispatch(fetchWeatherAction("New York"));
   }, [dispatch]);
 
-  // جلب الحالة من الـ store
+
   const { data: weather, loading, error } = useSelector((state) => state.weather);
 
   return (
